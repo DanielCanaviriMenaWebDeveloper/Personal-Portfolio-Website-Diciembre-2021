@@ -45,7 +45,7 @@ ul {
 }
 
 .defaultMargin {
-  margin: 0 14rem;
+  margin: 0 8rem;
 }
 
 button {
@@ -77,7 +77,7 @@ button i {
 /*         Mixins                     */
 /* ******************** */
 /* ******************** */
-/*            Navbar Style             */
+/*         Navbar Style            */
 /* ******************** */
 .navbar {
   /* background: rgb(25, 5, 44); */
@@ -143,5 +143,54 @@ button i {
 
 .navbar .links ul button {
   padding: 0.5rem;
+}
+
+/* ******************** */
+/*          Hero Style              */
+/* ******************** */
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .content .title {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6vh;
+  margin-bottom: 2rem;
+}
+
+.hero .image {
+  position: relative;
+}
+
+.hero .image img {
+  position: absolute;
+  bottom: 0;
+  height: 85vh;
+  width: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

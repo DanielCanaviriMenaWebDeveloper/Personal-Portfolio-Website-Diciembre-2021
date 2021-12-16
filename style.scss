@@ -44,7 +44,7 @@ ul {
 }
 
 .defaultMargin {
-    margin: 0 14rem;
+    margin: 0 8rem;
 }
 
 button {
@@ -80,7 +80,7 @@ button {
 }
 
 /* ******************** */
-/*            Navbar Style             */
+/*         Navbar Style            */
 /* ******************** */
 .navbar {
     /* background: rgb(25, 5, 44); */
@@ -141,6 +141,41 @@ button {
             }
         }
 
+    }
+}
+
+/* ******************** */
+/*          Hero Style              */
+/* ******************** */
+.hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 60vh;
+    overflow: hidden;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .title {
+            @include gradientTex;
+            font-size: 6vh;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .image {
+        position: relative;
+        
+        img {
+            position: absolute;
+            bottom: 0;
+            height: 85vh;
+            width: 50vh;
+            object-fit: cover;
+        }
     }
 }
 
