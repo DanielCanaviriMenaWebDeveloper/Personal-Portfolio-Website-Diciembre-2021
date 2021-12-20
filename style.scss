@@ -76,7 +76,12 @@ button {
     margin: 6rem 0;
 
     .coil {
-        border-bottom: 0.1px dash white;
+        border-bottom: 0.1px dashed white;
+    }
+
+    .bar {
+        width: 0.5%;
+        height: 7rem;
     }
 }
 
